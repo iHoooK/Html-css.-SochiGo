@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <title>SochiGo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Rubik&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+  	<header class="header">  
+  		<div class="header__top">
+  			<div class="container">
+  				<div class="row align-items-center">
+  					<div class="col-md-3">
+  						<div class="logo">
+  							<img src="img/logo.png" alt="SochiGo">
+  						</div>
+  					</div>
+  					<div class="col-md-4">
+  						<form action="#" class="header__search">
+	  						<input type="text" class="header__search__place" placeholder="Поиск...">
+	  						<button class="header__search__btn"type="submit"></button>
+	  					</form>
+  					</div>
+  					<div class="col-lg-5">
+  						<img class="header__google_play" src="img/google_play.png" alt="Google Play">
+  						<img class="header__app_store" src="img/app_store.png" alt="App Store">
+  					</div>
+  				</div>	
+  			</div>  			
+  		</div>
+  		<div class="header__nav">
+  			<div class="container" style="height: 56px;">
+  				<div class="row h-100 align-items-center">
+	  				<div class="col-lg-10">
+	  					<ul class="header__menu">
+							<li>
+								<a href="#">ГЛАВНАЯ</a>
+							</li>
+							<li>
+								<a href="#">СОБЫТИЯ</a>
+							</li>
+							<li>
+								<a href="#">МЕСТА РЯДОМ</a>
+							</li>
+							<li>
+								<a href="#">ПАРТНЕРАМ</a>
+							</li>
+						</ul>	
+	  				</div>
+	  				<div class="col-lg-2">
+	  					<a class="header__menu__link" href="#"> 
+	  						<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.627 15.127h14.38a.634.634 0 0 0 .49-.229.59.59 0 0 0 .131-.45c-.337-2.802-1.952-5.136-4.164-6.38-.934.996-2.225 1.614-3.648 1.614s-2.713-.618-3.648-1.614C1.957 9.312.341 11.646.004 14.448a.591.591 0 0 0 .131.45c.12.146.3.23.492.23z" fill="#FDFCFD"/><path d="M4.714 7.66c.08.09.164.175.25.257.76.719 1.757 1.16 2.852 1.16 1.096 0 2.093-.442 2.852-1.16a4.54 4.54 0 0 0 .482-.532c.595-.78.953-1.77.953-2.847C12.103 2.036 10.18 0 7.816 0 5.453 0 3.53 2.036 3.53 4.538c0 1.078.358 2.067.952 2.846.073.096.151.187.232.277z" fill="#FDFCFD"/></svg> 
+	  						<p>АККАУНТ</p></a>
+
+	  				</div>
+  				</div>  								
+  			</div>
+  		</div>  		
+  	</header>
+
+	<div class="content">		
+  		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 slider">
+					<img src="img/slide.png" alt="">
+					<div class="slider__theme">
+						<div>
+							<p class="slider__name">Sanremo</p>
+							<p class="slider__description">Центр</p>	
+						</div>
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+							    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+							    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+							    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+							    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="filter">
+						<form action="#">
+							<p class="filter__name">Фильтр заведений</p>
+							<label class="filter__description">Район</label>
+							<select class="filter__choose">
+								<option>Лазаревский</option>
+								<option>Пункт 2</option>
+							</select>
+							<label class="filter__description" >Категория</label>
+							<select class="filter__choose">
+								<option>Рестораны</option>
+								<option>Пункт 2</option>
+							</select>
+							<label class="filter__description_2" >Средний чек (руб) :</label>
+							<div class="filter__price">
+								<label>от</label>
+								<input class="filter__choose__price mr5" type="text">
+								<label>до</label>
+								<input class="filter__choose__price" type="text">
+							</div>	
+								<button type="submit" class="but filter__btn">Применить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-9 best">
+					<p class="best__title">Лучшие заведения</p>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="best__card">
+								<a href="#"><img class="best__card__img" src="img/best_card_1.png" alt=""></a>
+								<div class="best__card__theme">
+									<div>
+										<p class="best__name">Дом</p>
+										<a href="#" class="best__tag">Рестораны</a>	
+									</div>
+									<div>										
+										<div class="rating best__card__rating">
+											<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+										    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+										    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+										    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+										    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+										</div>
+										<a href="#" class="but best__btn">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="best__card">
+								<a href="#"><img class="best__card__img" src="img/best_card_2.png" alt=""></a>
+								<div class="best__card__theme">
+									<div>
+										<p class="best__name">Отель супер</p>
+										<a href="#" class="best__tag">Гостинницы</a>	
+									</div>
+									<div>										
+										<div class="rating best__card__rating">
+											<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+										    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+										    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+										    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+										    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+										</div>
+										<a href="#" class="but best__btn">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="best__card">
+								<<a href="#"><img class="best__card__img" src="img/best_card_3.png" alt=""></a>
+								<div class="best__card__theme">
+									<div>
+										<p class="best__name">Дом</p>
+										<a href="#" class="best__tag">Рестораны</a>	
+									</div>
+									<div>										
+										<div class="rating best__card__rating">
+											<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+										    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+										    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+										    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+										    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+										</div>
+										<a href="#" class="but best__btn">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="best__card">
+								<a href="#"><img class="best__card__img" src="img/best_card_4.png" alt=""></a>
+								<div class="best__card__theme">
+									<div>
+										<p class="best__name">Дом</p>
+										<a href="#" class="best__tag">Рестораны</a>	
+									</div>
+									<div>										
+										<div class="rating best__card__rating">
+											<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+										    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+										    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+										    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+										    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+										</div>
+										<a href="#" class="but best__btn">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="best__card">
+								<a href="#"><img class="best__card__img" src="img/best_card_5.png" alt=""></a>
+								<div class="best__card__theme">
+									<div>
+										<p class="best__name">Дом</p>
+										<a href="#" class="best__tag">Рестораны</a>	
+									</div>
+									<div>										
+										<div class="rating best__card__rating">
+											<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+										    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+										    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+										    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+										    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+										</div>
+										<a href="#" class="but best__btn">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="best__card">
+								<a href="#"><img class="best__card__img" src="img/best_card_6.png" alt=""></a>
+								<div class="best__card__theme">
+									<div>
+										<p class="best__name">Дом</p>
+										<a href="#" class="best__tag">Рестораны</a>	
+									</div>
+									<div>										
+										<div class="rating best__card__rating">
+											<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+										    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+										    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+										    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+										    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+										</div>
+										<a href="#" class="but best__btn">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-12 popular">
+					<p class="popular__title">Самые популярные</p>
+					<div class="best__card">
+						<a href="#"><img class="best__card__img" src="img/popular_card_1.png" alt=""></a>
+						<div class="popular__card__theme">
+							<p class="popular__name">Marriott</p>	
+							<div class="rating popular__card__rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+							    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+							    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+							    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+							    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+					</div>	
+					<div class="best__card">
+						<a href="#"><img class="best__card__img" src="img/popular_card_2.png" alt=""></a>
+						<div class="popular__card__theme">
+							<p class="popular__name">Marriott</p>	
+							<div class="rating popular__card__rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+							    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+							    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+							    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+							    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+					</div>	
+					<div class="best__card">
+						<a href="#"><img class="best__card__img" src="img/popular_card_3.png" alt=""></a>
+						<div class="popular__card__theme">
+							<p class="popular__name">Портондно</p>	
+							<div class="rating popular__card__rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+							    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+							    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+							    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+							    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+					</div>	
+					<div class="best__card">
+						<a href="#"><img class="best__card__img" src="img/popular_card_4.png" alt=""></a>
+						<div class="popular__card__theme">
+							<p class="popular__name">Marriott</p>	
+							<div class="rating popular__card__rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+							    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+							    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+							    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+							    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="pagination">
+			  <!-- <a href="#">&laquo;</a> -->
+			  <a class="active" href="#">1</a>
+			  <a href="#">2</a>
+			  <a href="#">3</a>
+			  <a href="#">&raquo;</a>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<p class="footer_text">SochiGo - городское медиа Сочи.</p>
+			<p class="footer_text">Рассказываем про события, новые места, культурные ивенты.</p>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+ <!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
